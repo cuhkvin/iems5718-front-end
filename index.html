@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>onlineStore</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="topbar flex-between">
+    <div class="topbar-left-search">
+      <button>
+        <img class="icon" src="./assets/icon/search-icon.png" alt="search" />
+      </button>
+    </div>
+    <div class="topbar-main">
+      <ul class="flex-evenly" id="menuList"></ul>
+    </div>
+    <div class="topbar-right-button-list flex-between">
+      <div class="my-box icon">
+        <button>
+          <img class="icon" src="./assets/icon/my-icon.png" alt="my" />
+        </button>
+      </div>
+      <div class="favorites-box icon">
+        <button>
+          <img class="icon" src="./assets/icon/favorites-icon.png" alt="favorites" />
+        </button>
+      </div>
+      <div class="shopping-cart icon">
+        <button class="cart-btn">
+          <img class="icon" src="./assets/icon/shoppingCart-icon.png" alt="shoppingCart" />
+        </button>
+        <div class="cart-drop">
+          <h3>
+            Shopping List 
+          </h3>
+          <ul id="cartItems" class="cart-items">
+          </ul>
+          <div class="total-price float-right">Total: $<span id="cartDropTotal">0.00</span></div>
+          <div class="checkout float-right">
+            <button>Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+   
+    <div class="container">
+      <div  class="left-menu">
+        <h1>Menu</h1>
+        <ul id="leftMenu" />
+      </div>
+      <div class="right-main-list">
+        <nav class="breadcrumb-box">
+          <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Animals</a></li>
+          </ul>
+        </nav>
+        <div class="card-container" id="cardContainer"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Vincent & wangDog</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="product.js"></script>
+</body>
+
+</html>
